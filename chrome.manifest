@@ -1,0 +1,6 @@
+content   SidebarStyleTabs                 chrome/content/
+skin      SidebarStyleTabs   classic/1.0   chrome/skin/
+locale    SidebarStyleTabs   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://SidebarStyleTabs/content/ff-overlay.xul
