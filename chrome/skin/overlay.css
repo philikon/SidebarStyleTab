@@ -1,7 +1,40 @@
+/* Background colour for the tree sidebar (light blue when window is
+   active, grey otherwise) */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tabs {
-  background-color: #d4dde5;
+  background-color: #d4dde5 !important;
 }
 
-#main-window:not([active="true"]) tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tabs {
-  background-color: #e8e8e8;
+#main-window:not([active="true"])
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tabs {
+  background-color: #e8e8e8 !important;
+}
+
+/* Style tabs themselves.  Get rid of most of the initial XUL styling */
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
+  -moz-appearance: none !important;
+  background: transparent !important;
+  -moz-border-top-colors: transparent transparent !important;
+  -moz-border-bottom-colors: transparent transparent !important;
+  -moz-border-right-colors: transparent transparent !important;
+  -moz-border-left-colors: transparent transparent !important;
+  -moz-border-radius-topleft : 0 !important;
+  -moz-border-radius-topright : 0 !important;
+  -moz-border-radius-bottomleft : 0 !important;
+  -moz-border-radius-bottomright : 0 !important;
+  -moz-box-align: stretch !important;
+
+  margin 0 !important;
+  padding 0 !important;
+  font-weight: normal !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
+  background-image: url("chrome://browser/skin/places/selected-focused-gradient.png") !important;
+  background-color: #8a8a8a !important;
+  border-top: 1px solid #91a0c0;
+  background-repeat: repeat-x;
+  background-position: bottom left;
+
+  font-weight: bold !important;
+  color: #ffffff !important;
 }
