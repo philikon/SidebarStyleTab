@@ -2,14 +2,9 @@
 <?xml-stylesheet href="chrome://SidebarStyleTabs/skin/overlay.css" type="text/css"?>
 <!DOCTYPE overlay SYSTEM "chrome://SidebarStyleTabs/locale/overlay.dtd">
 <overlay id="SidebarStyleTabs-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <script src="overlay.js"/>
-  <script src="ff-overlay.js"/>
 
   <stringbundleset id="stringbundleset">
     <stringbundle id="SidebarStyleTabs-strings" src="chrome://SidebarStyleTabs/locale/overlay.properties"/>
   </stringbundleset>
-
-
-
 
 </overlay>
