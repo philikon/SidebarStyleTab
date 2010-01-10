@@ -9,6 +9,12 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tabs {
   background-color: #e8e8e8 !important;
 }
 
+tabbrowser[treestyletab-mode="vertical"] .tabs-bottom,
+tabbrowser[treestyletab-mode="vertical"] .tabs-left,
+tabbrowser[treestyletab-mode="vertical"] .tab-text-shadow {
+  display: none !important;
+}
+
 /* Style tabs themselves.  Get rid of most of the initial XUL styling */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
   -moz-appearance: none !important;
@@ -22,10 +28,8 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
   -moz-border-radius-bottomleft : 0 !important;
   -moz-border-radius-bottomright : 0 !important;
   -moz-box-align: stretch !important;
-
   margin 0 !important;
   padding 0 !important;
-  font-weight: normal !important;
 }
 
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
@@ -34,7 +38,13 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
   border-top: 1px solid #91a0c0;
   background-repeat: repeat-x;
   background-position: bottom left;
+}
 
+tabbrowser[treestyletab-mode="vertical"] .tab-text {
+  font-weight: normal !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] .tab-text {
   font-weight: bold !important;
   color: #ffffff !important;
 }
