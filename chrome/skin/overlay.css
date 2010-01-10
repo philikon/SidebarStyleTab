@@ -58,7 +58,8 @@ tabbrowser[treestyletab-mode="vertical"] .tab-text {
   text-shadow: none !important;
 }
 
-tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] .tab-text {
+tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab[selected="true"] .tab-text {
   font-weight: bold !important;
   color: #ffffff !important;
 }
