@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
-    <em:id>sidebarstyletabs@philikon.de</em:id>
+    <em:id>sidebarstyletab@philikon.de</em:id>
     <em:type>2</em:type>
-    <em:name>SidebarStyleTabs</em:name>
+    <em:name>SidebarStyleTab</em:name>
     <em:version>1.0</em:version>
     <em:creator>Philipp von Weitershausen</em:creator>
     <em:contributor></em:contributor>

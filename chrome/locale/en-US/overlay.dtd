@@ -1,8 +1,8 @@
-<!ENTITY SidebarStyleTabs.label "Your localized menuitem">
-<!ENTITY SidebarStyleTabsContext.label "Your Menuitem">
-<!ENTITY SidebarStyleTabsContext.accesskey "Y">
-<!ENTITY SidebarStyleTabsToolbarButton.label "Your Toolbar Button">
-<!ENTITY SidebarStyleTabsToolbarButton.tooltip "This is your toolbar button!">
-<!ENTITY SidebarStyleTabsSidebar.label "Your Sidebar">
-<!ENTITY SidebarStyleTabsToolbar.name  "example">
-<!ENTITY SidebarStyleTabsToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &SidebarStyleTabsToolbar.name;">
+<!ENTITY SidebarStyleTab.label "Your localized menuitem">
+<!ENTITY SidebarStyleTabContext.label "Your Menuitem">
+<!ENTITY SidebarStyleTabContext.accesskey "Y">
+<!ENTITY SidebarStyleTabToolbarButton.label "Your Toolbar Button">
+<!ENTITY SidebarStyleTabToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY SidebarStyleTabSidebar.label "Your Sidebar">
+<!ENTITY SidebarStyleTabToolbar.name  "example">
+<!ENTITY SidebarStyleTabToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &SidebarStyleTabToolbar.name;">

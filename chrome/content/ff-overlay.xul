@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="chrome://SidebarStyleTabs/skin/overlay.css" type="text/css"?>
-<!DOCTYPE overlay SYSTEM "chrome://SidebarStyleTabs/locale/overlay.dtd">
-<overlay id="SidebarStyleTabs-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<?xml-stylesheet href="chrome://SidebarStyleTab/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://SidebarStyleTab/locale/overlay.dtd">
+<overlay id="SidebarStyleTab-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <stringbundleset id="stringbundleset">
-    <stringbundle id="SidebarStyleTabs-strings" src="chrome://SidebarStyleTabs/locale/overlay.properties"/>
+    <stringbundle id="SidebarStyleTab-strings" src="chrome://SidebarStyleTab/locale/overlay.properties"/>
   </stringbundleset>
 
 </overlay>
