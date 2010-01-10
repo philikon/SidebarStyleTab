@@ -31,6 +31,7 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
   margin: 0 !important;
   padding: 0 !important;
   height: 16px !important;
+  text-align: left !important;
 }
 
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
@@ -41,8 +42,20 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
   background-position: bottom left;
 }
 
+/* XXX doesn't seem to have any effect */
+tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab:not(:hover):not([selected="true"]) > .tab-icon-image {
+  opacity: 1.0 !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab:not(:hover):not([selected="true"]) > .tab-close-button {
+  display: none !important;
+}
+
 tabbrowser[treestyletab-mode="vertical"] .tab-text {
   font-weight: normal !important;
+  text-shadow: none !important;
 }
 
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] .tab-text {
