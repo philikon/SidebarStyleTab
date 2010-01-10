@@ -1,3 +1,5 @@
+/* Unset bottom border, instead let's have a border on the right-hand
+   side, much like the sidebar does. */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-strip {
   border-right: 1px solid #404040;
   border-bottom: none !important;
@@ -8,12 +10,12 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-strip {
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tabs {
   background-color: #d4dde5 !important;
 }
-
 #main-window:not([active="true"])
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tabs {
   background-color: #e8e8e8 !important;
 }
 
+/* Don't display unnecessary clutter */
 tabbrowser[treestyletab-mode="vertical"] .tabs-bottom,
 tabbrowser[treestyletab-mode="vertical"] .tabs-left,
 tabbrowser[treestyletab-mode="vertical"] .tab-text-shadow {
@@ -47,6 +49,7 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
   background-position: bottom left;
 }
 
+/* Always display the favicon at 100% opacity */
 /* XXX doesn't seem to have any effect */
 tabbrowser[treestyletab-mode="vertical"]
 .tabbrowser-tab:not(:hover):not([selected="true"]) > .tab-icon-image {
@@ -58,11 +61,12 @@ tabbrowser[treestyletab-mode="vertical"]
   display: none !important;
 }
 
+/* Tab label is without special decoration except when selected: then
+   the text is white and bold. */
 tabbrowser[treestyletab-mode="vertical"] .tab-text {
   font-weight: normal !important;
   text-shadow: none !important;
 }
-
 tabbrowser[treestyletab-mode="vertical"]
 .tabbrowser-tab[selected="true"] .tab-text {
   font-weight: bold !important;
