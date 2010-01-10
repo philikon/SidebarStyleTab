@@ -1,3 +1,8 @@
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-strip {
+  border-right: 1px solid #404040;
+  border-bottom: none !important;
+}
+
 /* Background colour for the tree sidebar (light blue when window is
    active, grey otherwise) */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tabs {
