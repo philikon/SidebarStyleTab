@@ -1,3 +1,5 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
 /* Unset bottom border, instead let's have a border on the right-hand
    side, much like the sidebar does. */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-strip {
