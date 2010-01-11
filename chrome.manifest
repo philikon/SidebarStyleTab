@@ -1,4 +1,4 @@
-content   SidebarStyleTab                 chrome/content/
-skin      SidebarStyleTab   classic/1.0   chrome/skin/
-locale    SidebarStyleTab   en-US         chrome/locale/en-US/
-override  chrome://treestyletab/skin/square.css chrome://SidebarStyleTab/skin/square.css
+content   sidebarstyletab                 chrome/content/
+skin      sidebarstyletab   classic/1.0   chrome/skin/
+locale    sidebarstyletab   en-US         chrome/locale/en-US/
+override  chrome://treestyletab/skin/square.css chrome://sidebarstyletab/skin/square.css
