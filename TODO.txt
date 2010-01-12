@@ -1,7 +1,5 @@
 * improve drag'n'drop styling
 
-* number of sub-tabs should appear in bubbles like unread msgs in Mail.app
-
 * favicon and close button move when you (de)select a tab
 
 * spacing to the left is a bit cramped (border -> twisty -> icon)

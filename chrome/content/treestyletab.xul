@@ -4,6 +4,8 @@
 <overlay id="sidebarstyletab-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+  <script src="treestyletab.js" />
+
   <stringbundleset id="stringbundleset">
     <stringbundle id="sidebarstyletab-strings"
                   src="chrome://sidebarstyletab/locale/overlay.properties" />

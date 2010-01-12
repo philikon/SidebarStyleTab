@@ -4,6 +4,9 @@
 * Changed the tree twisty triangles to the ones familiar from the
   native Mac OS X tree widget.
 
+* The child-tab count now appears in bubbles familiar from other Mac OS X
+  applications like Mail.app.
+
 
 1.0 (2010-01-11)
 ----------------

@@ -78,7 +78,7 @@ tabbrowser[treestyletab-mode="vertical"]
 
 tabbrowser[treestyletab-mode="vertical"]
 .treestyletab-counter-container {
-  padding: 0 4px !important;
+  padding: 0 6px !important;
   background-color: #91a0c0 !important;
   -moz-border-radius: 8px !important;
 }
