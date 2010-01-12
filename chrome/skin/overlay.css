@@ -75,3 +75,28 @@ tabbrowser[treestyletab-mode="vertical"]
   font-weight: bold !important;
   color: #ffffff !important;
 }
+
+tabbrowser[treestyletab-mode="vertical"]
+.treestyletab-counter-container {
+  padding: 0 4px !important;
+  background-color: #91a0c0 !important;
+  -moz-border-radius: 8px !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"]
+.treestyletab-counter {
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab[selected="true"]
+.treestyletab-counter-container {
+  background-color: #ffffff !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab[selected="true"]
+.treestyletab-counter {
+  color: #91a0c0 !important;
+}
