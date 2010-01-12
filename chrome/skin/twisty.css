@@ -1,13 +1,9 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 .treestyletab-twisty-container {
-	margin: 0 3px 0 -3px;
 	-moz-box-pack: start;
 	-moz-box-align: center;
 	-moz-box-flex: 1;
-}
-
-tabbrowser .treestyletab-twisty-container {
 	position: relative;
 	margin: 0 14px 0 -14px;
 }
@@ -18,11 +14,8 @@ tabbrowser[treestyletab-allow-subtree-collapse="true"] .tab-icon {
 }
 
 .treestyletab-twisty {
-	list-style-image: url("chrome://treestyletab/skin/twisty-retro.png");
-	-moz-image-region: rect(0, 32px, 16px, 16px);
-}
-tabbrowser .treestyletab-twisty {
 	list-style-image: url("chrome://treestyletab/skin/twisty-modern-b-l.png");
+	-moz-image-region: rect(0, 32px, 16px, 16px);
 }
 
 .tabbrowser-tab[treestyletab-subtree-collapsed="true"] .treestyletab-twisty {
