@@ -4,9 +4,7 @@
 
 * favicon and close button move when you (de)select a tab
 
-* spacing to the left is a bit cramped... should we change that?!?
-
-* change tree triangles to the system ones
+* spacing to the left is a bit cramped (border -> twisty -> icon)
 
 * background for indented tabs should cover the whole width
 
