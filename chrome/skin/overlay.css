@@ -76,27 +76,22 @@ tabbrowser[treestyletab-mode="vertical"]
   color: #ffffff !important;
 }
 
-tabbrowser[treestyletab-mode="vertical"]
-.treestyletab-counter-container {
+
+/* Make the tab counter look like the bubbles in Mail.app et.al. */
+tabbrowser[treestyletab-mode="vertical"] .treestyletab-counter-container {
   padding: 0 6px !important;
   background-color: #91a0c0 !important;
   -moz-border-radius: 8px !important;
 }
-
-tabbrowser[treestyletab-mode="vertical"]
-.treestyletab-counter {
+tabbrowser[treestyletab-mode="vertical"] .treestyletab-counter {
   color: #ffffff !important;
   font-weight: bold !important;
 }
-
-tabbrowser[treestyletab-mode="vertical"]
-.tabbrowser-tab[selected="true"]
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"]
 .treestyletab-counter-container {
   background-color: #ffffff !important;
 }
-
-tabbrowser[treestyletab-mode="vertical"]
-.tabbrowser-tab[selected="true"]
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"]
 .treestyletab-counter {
   color: #91a0c0 !important;
 }
