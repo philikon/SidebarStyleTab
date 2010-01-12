@@ -1,5 +1,5 @@
-1.1 (XXX)
----------
+1.1 (2010-01-12)
+----------------
 
 * Changed the tree twisty triangles to the ones familiar from the
   native Mac OS X tree widget.
