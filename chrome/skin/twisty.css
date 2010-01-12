@@ -7,13 +7,13 @@
 	-moz-box-flex: 1;
 }
 
-tabbrowser[treestyletab-twisty-style^="modern"] .treestyletab-twisty-container {
+tabbrowser .treestyletab-twisty-container {
 	position: relative;
 	margin: 0 14px 0 -14px;
 }
 
 
-tabbrowser[treestyletab-twisty-style^="modern"][treestyletab-allow-subtree-collapse="true"]:not([treestyletab-tab-contents-inverted="true"]) .tab-icon {
+tabbrowser[treestyletab-allow-subtree-collapse="true"] .tab-icon {
 	margin-left: 9px;
 }
 
@@ -21,11 +21,8 @@ tabbrowser[treestyletab-twisty-style^="modern"][treestyletab-allow-subtree-colla
 	list-style-image: url("chrome://treestyletab/skin/twisty-retro.png");
 	-moz-image-region: rect(0, 32px, 16px, 16px);
 }
-tabbrowser[treestyletab-twisty-style="modern-black"] .treestyletab-twisty {
+tabbrowser .treestyletab-twisty {
 	list-style-image: url("chrome://treestyletab/skin/twisty-modern-b-l.png");
-}
-tabbrowser[treestyletab-twisty-style="modern-white"] .treestyletab-twisty {
-	list-style-image: url("chrome://treestyletab/skin/twisty-modern-w-l.png");
 }
 
 .tabbrowser-tab[treestyletab-subtree-collapsed="true"] .treestyletab-twisty {
