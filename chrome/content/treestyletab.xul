@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="chrome://sidebarstyletab/skin/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://sidebarstyletab/skin/treestyletab.css" type="text/css"?>
 <!DOCTYPE overlay SYSTEM "chrome://sidebarstyletab/locale/overlay.dtd">
-<overlay id="sidebarstyletab-overlay"
+<overlay id="sidebarstyletab-treestyletab-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <script src="treestyletab.js" />
