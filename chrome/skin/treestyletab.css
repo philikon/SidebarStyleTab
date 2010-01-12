@@ -4,11 +4,13 @@
    side, much like the sidebar does. */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-strip {
   border-right: 1px solid #404040;
+  border-top: 1px solid #404040;
   border-bottom: none !important;
 }
 #main-window:not([active="true"])
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-strip {
   border-right: 1px solid #868686;
+  border-top: 1px solid #868686;
 }
 
 /* Background colour for the tree sidebar (light blue when window is
