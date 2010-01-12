@@ -2,4 +2,5 @@ content   sidebarstyletab                 chrome/content/
 skin      sidebarstyletab   classic/1.0   chrome/skin/
 locale    sidebarstyletab   en-US         chrome/locale/en-US/
 overlay   chrome://treestyletab/content/treestyletab.xul   chrome://sidebarstyletab/content/treestyletab.xul
+overlay   chrome://browser/content/browser.xul   chrome://sidebarstyletab/content/browser.xul
 override  chrome://treestyletab/skin/twisty.css  chrome://sidebarstyletab/skin/twisty.css

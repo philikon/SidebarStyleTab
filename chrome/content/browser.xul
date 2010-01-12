@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://sidebarstyletab/skin/browser.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://browser/locale/tabbrowser.dtd" >
+<overlay id="sidebarstyletab-sidebar-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <statusbar id="status-bar">
+      <toolbarbutton id="statusbar-newtabbutton"
+                     insertbefore="statusbar-display"
+                     command="cmd_newNavigatorTab"
+                     tooltiptext="&newTabButton.tooltip;" />
+    </statusbar>
+
+</overlay>

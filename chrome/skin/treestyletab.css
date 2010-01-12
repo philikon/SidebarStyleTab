@@ -99,3 +99,9 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"]
 .treestyletab-counter {
   color: #91a0c0 !important;
 }
+
+/* Don't show the new tab button (+) in vertical mode.  It's been
+   moved to the statusbar. */
+tabbrowser[treestyletab-mode="vertical"] .tabs-newtab-button {
+  display: none;
+}

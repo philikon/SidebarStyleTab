@@ -5,5 +5,3 @@
 * spacing to the left is a bit cramped (border -> twisty -> icon)
 
 * background for indented tabs should cover the whole width
-
-* new tab button --> bottom
