@@ -19,10 +19,8 @@ tabbrowser[treestyletab-allow-subtree-collapse="true"] .tab-icon {
 
 .tabbrowser-tab[treestyletab-subtree-collapsed="true"] .treestyletab-twisty {
 	list-style-image: url("chrome://sidebarstyletab/skin/twisty-closed.png");
-	opacity: 0.38;
 }
 
-.treestyletab-twisty:active,
-.tabbrowser-tab[treestyletab-subtree-collapsed="true"] .treestyletab-twisty:active {
+.treestyletab-twisty:active {
 	opacity: 1.0;
 }
