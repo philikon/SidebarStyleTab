@@ -10,9 +10,9 @@
 * Fixed a subtlety concerning the separator between the tab bar and
   the content window.
 
-* Got rid of the new tab button (+) in the tab bar.  Instead we have
-  one in the status bar on the bottom left, much like the bottom-left
-  buttons in Mail.app and other Mac OS X applications.
+* Moved the "new tab" button (+) from the tab bar to the status bar on
+  the bottom left, much like the bottom-left buttons in Mail.app and
+  other Mac OS X applications.
 
 
 1.0 (2010-01-11)
