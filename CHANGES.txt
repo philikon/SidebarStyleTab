@@ -7,6 +7,9 @@
 * The child-tab count now appears in bubbles familiar from other Mac OS X
   applications like Mail.app.
 
+* Fixed a subtlety concerning the separator between the tab bar and
+  the content window.
+
 
 1.0 (2010-01-11)
 ----------------
