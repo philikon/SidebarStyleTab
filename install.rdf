@@ -4,7 +4,7 @@
     <em:id>sidebarstyletab@philikon.de</em:id>
     <em:type>2</em:type>
     <em:name>SidebarStyleTab</em:name>
-    <em:version>1.0</em:version>
+    <em:version>1.1</em:version>
     <em:creator>Philipp von Weitershausen</em:creator>
     <em:contributor></em:contributor>
     <em:description>Restyles the vertical tab bar as provided by TreeStyleTab to look like the sidebar on Mac OS X (which looks like the iTunes sidebar)</em:description>
