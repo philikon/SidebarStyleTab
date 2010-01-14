@@ -1,4 +1,11 @@
-* test on Firefox 3.6
+* Firefox 3.6
+
+  - border-top is missing from selected tab
+
+  - even on root tabs the background gradient doesn't extend all the
+    way to the left border.
+
+  - either favicon is too low or background doesn't extend down enough.
 
 * improve drag'n'drop styling
 

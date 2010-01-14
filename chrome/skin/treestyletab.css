@@ -51,11 +51,14 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
 }
 
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
+  border-top: 1px solid #94A1C0 !important;
+
+  /* Firefox 3.5 */
   background-image: url("chrome://browser/skin/places/selected-focused-gradient.png") !important;
-  background-color: #8a8a8a !important;
-  border-top: 1px solid #91a0c0;
   background-repeat: repeat-x;
   background-position: bottom left;
+  /* Firefox 3.6 */
+  background: -moz-linear-gradient(top, #A0B0CF, #7386AB) repeat-x !important;
 }
 
 /* Always display the favicon at 100% opacity */
@@ -73,6 +76,7 @@ tabbrowser[treestyletab-mode="vertical"]
 /* Tab label is without special decoration except when selected: then
    the text is white and bold. */
 tabbrowser[treestyletab-mode="vertical"] .tab-text {
+  font-size: 11px;
   font-weight: normal !important;
   text-shadow: none !important;
 }
