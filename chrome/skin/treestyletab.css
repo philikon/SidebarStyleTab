@@ -106,14 +106,27 @@ tabbrowser[treestyletab-mode="vertical"] .treestyletab-counter {
   color: #ffffff !important;
   font-weight: bold !important;
 }
-tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"]
-.treestyletab-counter-container {
+tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab[selected="true"] .treestyletab-counter-container {
   background-color: #ffffff !important;
 }
-tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"]
-.treestyletab-counter {
+tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab[selected="true"] .treestyletab-counter {
   color: #91a0c0 !important;
 }
+#main-window:not([active="true"])
+tabbrowser[treestyletab-mode="vertical"] .treestyletab-counter-container {
+  background-color: #b5b5b5 !important;
+}
+#main-window:not([active="true"]) tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab[selected="true"] .treestyletab-counter-container {
+  background-color: #ffffff !important;
+}
+#main-window:not([active="true"]) tabbrowser[treestyletab-mode="vertical"]
+.tabbrowser-tab[selected="true"] .treestyletab-counter {
+  color: #929292 !important;
+}
+
 
 /* Don't show the new tab button (+) in vertical mode.  It's been
    moved to the statusbar. */
