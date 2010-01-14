@@ -52,13 +52,20 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
 
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
   border-top: 1px solid #94A1C0 !important;
-
   /* Firefox 3.5 */
   background-image: url("chrome://browser/skin/places/selected-focused-gradient.png") !important;
   background-repeat: repeat-x;
   background-position: bottom left;
   /* Firefox 3.6 */
   background: -moz-linear-gradient(top, #A0B0CF, #7386AB) repeat-x !important;
+}
+#main-window:not([active="true"])
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
+  border-top: 1px solid #979797 !important;
+  /* Firefox 3.5 */
+  background-image: url("chrome://browser/skin/places/selected-gradient.png") !important;
+  /* Firefox 3.6 */
+  background: -moz-linear-gradient(top, #B4B4B4, #8A8A8A) repeat-x !important;  
 }
 
 /* Always display the favicon at 100% opacity */
