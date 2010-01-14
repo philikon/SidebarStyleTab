@@ -11,6 +11,8 @@
 
 * favicon and close button move when you (de)select a tab
 
+* favicon for unhovered tabs is not at maximum opacity
+
 * spacing to the left is a bit cramped (border -> twisty -> icon)
 
 * background for indented tabs should cover the whole width
