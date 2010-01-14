@@ -1,5 +1,5 @@
-1.2 (XXX)
----------
+1.2 (2010-01-14)
+----------------
 
 * Improved look-and-feel of the selected tab.  Thanks to Jeff Balogh
   for suggestions.
