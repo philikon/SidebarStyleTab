@@ -1,3 +1,7 @@
+* test on Firefox 3.6
+
+* slight text shadow for selected tab's label
+
 * improve drag'n'drop styling
 
 * favicon and close button move when you (de)select a tab
