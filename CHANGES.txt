@@ -4,6 +4,9 @@
 * Improved look-and-feel of the selected tab.  Thanks to Jeff Balogh
   for suggestions.
 
+* Explicitly set the tab label font colour so that a non-standard
+  setting from Personas won't interfere.
+
 * Preliminary support for Firefox 3.6.
 
 

@@ -85,6 +85,7 @@ tabbrowser[treestyletab-mode="vertical"]
 tabbrowser[treestyletab-mode="vertical"] .tab-text {
   font-size: 11px;
   font-weight: normal !important;
+  color: #000000 !important;
   text-shadow: none !important;
 }
 tabbrowser[treestyletab-mode="vertical"]
