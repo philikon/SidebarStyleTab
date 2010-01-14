@@ -80,6 +80,7 @@ tabbrowser[treestyletab-mode="vertical"]
 .tabbrowser-tab[selected="true"] .tab-text {
   font-weight: bold !important;
   color: #ffffff !important;
+  text-shadow: 0 1px #404040 !important;
 }
 
 

@@ -1,6 +1,9 @@
 1.2 (XXX)
 ---------
 
+* Improved look-and-feel of selected tab.  Thanks to Jeff Balogh for
+  the suggestion.
+
 
 1.1 (2010-01-12)
 ----------------
