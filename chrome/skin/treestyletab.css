@@ -48,6 +48,9 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
   padding: 0 !important;
   height: 16px !important;
   text-align: left !important;
+  border-top: 1px solid transparent !important;
+  border-left: 8px solid transparent !important;
+  border-right: 3px solid transparent !important;
 }
 
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {

@@ -5,7 +5,7 @@
 	-moz-box-align: center;
 	-moz-box-flex: 1;
 	position: relative;
-	margin: 0 10px 0 -10px;
+	margin: 1px 12px -1px -12px;
 }
 
 tabbrowser[treestyletab-allow-subtree-collapse="true"] .tab-icon {
