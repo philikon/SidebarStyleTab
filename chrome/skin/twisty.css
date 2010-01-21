@@ -16,6 +16,10 @@ tabbrowser[treestyletab-allow-subtree-collapse="true"] .tab-icon {
 	list-style-image: url("chrome://sidebarstyletab/skin/twisty.png");
 	opacity: 0.38;
 }
+.tabbrowser-tab[selected="true"] .treestyletab-twisty {
+	list-style-image: url("chrome://sidebarstyletab/skin/twisty-white.png");
+	opacity: 1;
+}
 
 .tabbrowser-tab[treestyletab-subtree-collapsed="true"] .treestyletab-twisty {
 	-moz-transform: rotate(270deg);
