@@ -1,6 +1,8 @@
 1.5 (XXX)
 ---------
 
+* Make splitter between tabs and content browser as thin as the one
+  between the sidebar and the rest of the window.
 
 
 1.4 (2010-01-21)

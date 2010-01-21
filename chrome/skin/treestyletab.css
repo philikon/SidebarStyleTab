@@ -27,8 +27,14 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tabs {
 /* Don't display unnecessary clutter */
 tabbrowser[treestyletab-mode="vertical"] .tabs-bottom,
 tabbrowser[treestyletab-mode="vertical"] .tabs-left,
-tabbrowser[treestyletab-mode="vertical"] .tab-text-shadow {
+tabbrowser[treestyletab-mode="vertical"] .tab-text-shadow,
+tabbrowser[treestyletab-mode="vertical"] .treestyletab-splitter grippy {
   display: none !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"] .treestyletab-splitter {
+  width: 1px !important;
+  min-width: 1px !important;
 }
 
 /* Style tabs themselves.  Get rid of most of the initial XUL styling */
