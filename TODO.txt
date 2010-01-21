@@ -10,3 +10,5 @@
 * improve drag'n'drop styling
 
 * background for indented tabs should cover the whole width
+
+* make slider between tabbar and content thinner?
