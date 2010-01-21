@@ -69,6 +69,10 @@ tabbrowser[treestyletab-mode="vertical"] .tab-close-button {
   margin-bottom: 1px;
 }
 
+tabbrowser[treestyletab-mode="vertical"] .tab-close-button {
+  margin-left: 3px;
+}
+
 /* Always display the favicon at 100% opacity */
 tabbrowser[treestyletab-mode="vertical"]
 .tabbrowser-tab:not(:hover):not([selected="true"]) .tab-icon-image {
