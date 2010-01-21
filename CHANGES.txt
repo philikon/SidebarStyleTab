@@ -4,6 +4,8 @@
 * Styling on Firefox 3.6 has been much improved, but as a consequence
   Firefox 3.6 is now required.
 
+* Improve look-and-feel of tree twisty triangles for the selected tab.
+
 
 1.3 (2010-01-21)
 ----------------
