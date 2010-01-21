@@ -105,6 +105,7 @@ tabbrowser[treestyletab-mode="vertical"] .treestyletab-counter-container {
 tabbrowser[treestyletab-mode="vertical"] .treestyletab-counter {
   color: #ffffff !important;
   font-weight: bold !important;
+  text-shadow: none !important;
 }
 tabbrowser[treestyletab-mode="vertical"]
 .tabbrowser-tab[selected="true"] .treestyletab-counter-container {
