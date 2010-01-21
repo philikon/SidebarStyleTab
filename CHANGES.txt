@@ -3,6 +3,8 @@
 
 * Fixed colour of tab count bubbles when Firefox window isn't active.
 
+* Display all icons at full opacity.
+
 
 1.2 (2010-01-14)
 ----------------

@@ -72,9 +72,8 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
 }
 
 /* Always display the favicon at 100% opacity */
-/* XXX doesn't seem to have any effect */
 tabbrowser[treestyletab-mode="vertical"]
-.tabbrowser-tab:not(:hover):not([selected="true"]) > .tab-icon-image {
+.tabbrowser-tab:not(:hover):not([selected="true"]) .tab-icon-image {
   opacity: 1.0 !important;
 }
 
