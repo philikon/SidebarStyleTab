@@ -1,4 +1,4 @@
-1.4 (XXX)
+1.4 (2010-01-21)
 ----------------
 
 * Styling on Firefox 3.6 has been much improved, but as a consequence
