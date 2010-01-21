@@ -1,9 +1,12 @@
-1.3 (XXX)
----------
+1.3 (2010-01-21)
+----------------
 
 * Fixed colour of tab count bubbles when Firefox window isn't active.
 
 * Display all icons at full opacity.
+
+* Improve spacing (which unfortunately makes the styling on Firefox
+  3.6 slightly worse.)
 
 
 1.2 (2010-01-14)
