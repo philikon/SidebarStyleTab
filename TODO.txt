@@ -1,11 +1,5 @@
-* Firefox 3.6
-
-  - border-top is missing from selected tab
-
-  - even on root tabs the background gradient doesn't extend all the
-    way to the left border.
-
-  - either favicon is too low or background doesn't extend down enough.
+* white close-button for selected tab, blue close button for
+  unselected tabs
 
 * improve drag'n'drop styling
 
