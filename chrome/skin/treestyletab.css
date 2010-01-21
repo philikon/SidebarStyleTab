@@ -35,10 +35,10 @@ tabbrowser[treestyletab-mode="vertical"] .tab-text-shadow {
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
   -moz-appearance: none !important;
   background: transparent !important;
-  -moz-border-top-colors: transparent transparent !important;
-  -moz-border-bottom-colors: transparent transparent !important;
-  -moz-border-right-colors: transparent transparent !important;
-  -moz-border-left-colors: transparent transparent !important;
+  -moz-border-top-colors: none !important;
+  -moz-border-bottom-colors: none !important;
+  -moz-border-right-colors: none !important;
+  -moz-border-left-colors: none !important;
   -moz-border-radius-topleft : 0 !important;
   -moz-border-radius-topright : 0 !important;
   -moz-border-radius-bottomleft : 0 !important;
@@ -51,6 +51,7 @@ tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
   border-top: 1px solid transparent !important;
   border-left: 8px solid transparent !important;
   border-right: 3px solid transparent !important;
+  border-bottom: 2px solid transparent !important;
 }
 
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"] {
