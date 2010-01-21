@@ -5,6 +5,9 @@
 
 * Display all icons at full opacity.
 
+* Prevent the tab contents from moving about when selected and
+  deselected.
+
 * Improve spacing (which unfortunately makes the styling on Firefox
   3.6 slightly worse.)
 
