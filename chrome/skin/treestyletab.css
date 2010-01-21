@@ -35,7 +35,7 @@ tabbrowser[treestyletab-mode="vertical"] .tab-text-shadow {
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab {
   -moz-appearance: none !important;
   background: transparent !important;
-  -moz-border-top-colors: none !important;
+  -moz-border-top-colors: transparent transparent !important;
   -moz-border-bottom-colors: none !important;
   -moz-border-right-colors: none !important;
   -moz-border-left-colors: none !important;
