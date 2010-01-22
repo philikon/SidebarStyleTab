@@ -79,6 +79,21 @@ tabbrowser[treestyletab-mode="vertical"] .tab-close-button {
   margin-left: 3px;
 }
 
+tabbrowser[treestyletab-mode="vertical"]
+.tab-close-button image {
+  list-style-image: url("chrome://sidebarstyletab/skin/closetab.png");
+  opacity: 0.27;  /* turn black into #b9b9b9 */
+}
+tabbrowser[treestyletab-mode="vertical"]
+.tab-close-button:active image {
+  opacity: 0.46;  /* turn black into #8a8a8a */
+}
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[selected="true"]
+.tab-close-button image {
+  list-style-image: url("chrome://sidebarstyletab/skin/closetab-white.png");
+  opacity: 1;
+}
+
 /* Always display the favicon at 100% opacity */
 tabbrowser[treestyletab-mode="vertical"]
 .tabbrowser-tab:not(:hover):not([selected="true"]) .tab-icon-image {

@@ -1,6 +1,3 @@
-* white close-button for selected tab, blue close button for
-  unselected tabs
-
 * improve drag'n'drop styling
 
 * background for indented tabs should cover the whole width

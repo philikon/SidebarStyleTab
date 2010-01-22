@@ -4,6 +4,8 @@
 * Make splitter between tabs and content browser as thin as the one
   between the sidebar and the rest of the window.
 
+* Improve look-and-feel of the tab close button.
+
 
 1.4 (2010-01-21)
 ----------------
