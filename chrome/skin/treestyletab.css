@@ -35,6 +35,7 @@ tabbrowser[treestyletab-mode="vertical"] .treestyletab-splitter grippy {
 tabbrowser[treestyletab-mode="vertical"] .treestyletab-splitter {
   width: 1px !important;
   min-width: 1px !important;
+  background: none !important;
 }
 
 /* Style tabs themselves.  Get rid of most of the initial XUL styling */
