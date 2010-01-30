@@ -6,6 +6,9 @@
 
 * Improve look-and-feel of the tab close button.
 
+* Bring back the "all tabs" button, now placed next to the "new tab"
+  button in the status bar.
+
 
 1.4 (2010-01-21)
 ----------------

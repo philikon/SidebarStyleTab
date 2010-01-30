@@ -6,9 +6,15 @@
 
     <statusbar id="status-bar">
       <toolbarbutton id="statusbar-newtabbutton"
+                     class="statusbar-tabbutton"
                      insertbefore="statusbar-display"
                      command="cmd_newNavigatorTab"
                      tooltiptext="&newTabButton.tooltip;" />
+      <toolbarbutton id="statusbar-alltabsbutton"
+                     class="statusbar-tabbutton"
+                     insertbefore="statusbar-display"
+                     command="Browser:ShowAllTabs"
+                     tooltiptext="&listAllTabs.label;" />
     </statusbar>
 
 </overlay>
