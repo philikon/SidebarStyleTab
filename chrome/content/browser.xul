@@ -4,10 +4,11 @@
 <overlay id="sidebarstyletab-sidebar-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
+  <script src="browser.js" />
+
   <statusbar id="status-bar">
-    <hbox id="statusbar-tabbar-equivalent" flex="1"
-          insertbefore="statusbar-display">
-      <hbox id="statusbar-tabbar-buttons" flex="1">
+      <hbox id="statusbar-tabbar-buttons"
+            insertbefore="statusbar-display">
         <toolbarbutton id="statusbar-newtabbutton"
                        class="statusbar-tabbutton"
                        insertbefore="statusbar-display"
@@ -18,10 +19,9 @@
                        insertbefore="statusbar-display"
                        command="Browser:ShowAllTabs"
                        tooltiptext="&listAllTabs.label;" />
-        <spacer flex="1" />
       </hbox>
       <splitter id="statusbar-tabbar-splitter"
+                insertbefore="statusbar-display"
                 state="open" collapse="before" />
-    </hbox>
   </statusbar>
 </overlay>
