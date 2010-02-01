@@ -7,18 +7,10 @@ var SidebarStyleTabResizer = {
         this.tabbrowserStrip.addEventListener("DOMAttrModified", this, false);
 
         this.buttonsStrip.width = this.tabbrowserStrip.width;
-        this.execute = true;
     },
 
     onAttrModified: function(event) {
         if (event.attrName != 'width') {
-            return;
-        }
-
-        /* We want to prevent unnecessary calls
-           (e.g. x.width = y.width --> y.width = x.width and so on.) */
-        if (!this.execute) {
-            this.execute = true;
             return;
         }
 
@@ -34,9 +26,6 @@ var SidebarStyleTabResizer = {
         if (event.target.width) {
             other.width = event.target.width;
         }
-
-        /* Prevent at least the next call to this method. */
-        this.execute = false;
     },
 
 	handleEvent: function(event) {
