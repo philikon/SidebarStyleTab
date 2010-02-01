@@ -11,7 +11,7 @@
 .statusbar-tabbutton {
   border-right: 1px solid #868686;
   border-left: 1px solid #868686;
-  width: 64px;
+  width: 48px;
   height: 20px;
   margin: 0;
 }
@@ -23,7 +23,7 @@
   margin-left: -2px;  /* make it tight with the left side of the window */
   list-style-image: url(chrome://browser/skin/tabbrowser/newtab.png);
   -moz-image-region: rect(2px, 17px, 18px, 1px);
-  padding: 0 0 0 24px; /* make sure the image has space and is centered */
+  padding: 0 0 0 16px; /* make sure the image has space and is centered */
 }
 #statusbar-newtabbutton:hover {
   -moz-image-region: rect(2px, 35px, 18px, 19px);
@@ -37,7 +37,7 @@
   list-style-image: url(chrome://browser/skin/tabbrowser/alltabs-box-bkgnd-icon.png);
   -moz-image-region: rect(2px, 19px, 18px, 3px);
   -moz-transform: rotate(180deg);
-  padding: 0 0 0 24px; /* make sure the image has space and is centered */
+  padding: 0 0 0 16px; /* make sure the image has space and is centered */
 }
 #statusbar-alltabsbutton:hover {
   -moz-image-region: rect(2px, 41px, 18px, 25px);
