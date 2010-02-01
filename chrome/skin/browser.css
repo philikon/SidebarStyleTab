@@ -1,5 +1,11 @@
 #statusbar-tabbar-splitter {
   height: 20px;
+  width: 16px;
+  border-right: 1px solid #404040;
+  background-image: url(chrome://sidebarstyletab/skin/splitter.png);
+}
+#main-window:not([active="true"]) #statusbar-tabbar-splitter {
+  border-right: 1px solid #868686;
 }
 
 .statusbar-tabbutton {
