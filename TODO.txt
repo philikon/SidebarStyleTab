@@ -1,4 +1,6 @@
-* make slider wider by adding transparent border or something?
+* when sidebar appears, the whole button+slider ensemble in the status
+  bar needs to be moved as well. in fact, we need the exact same
+  event listener for the status bar as well.
 
 * check out -moz-appearance: treewisty/treetwistyopen;
 
