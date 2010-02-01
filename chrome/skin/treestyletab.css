@@ -3,13 +3,11 @@
 /* Unset bottom border, instead let's have a border on the right-hand
    side, much like the sidebar does. */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-strip {
-  border-right: 1px solid #404040;
   border-top: 1px solid #404040;
   border-bottom: none !important;
 }
 #main-window:not([active="true"])
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-strip {
-  border-right: 1px solid #868686;
   border-top: 1px solid #868686;
 }
 
@@ -32,10 +30,16 @@ tabbrowser[treestyletab-mode="vertical"] .treestyletab-splitter grippy {
   display: none !important;
 }
 
+/* Use the splitter to display the border of .tabbrowser-strip */
 tabbrowser[treestyletab-mode="vertical"] .treestyletab-splitter {
   width: 1px !important;
   min-width: 1px !important;
-  background: none !important;
+  background-image: none;
+  background-color: #404040;
+}
+#main-window:not([active="true"])
+tabbrowser[treestyletab-mode="vertical"] .treestyletab-splitter {
+  background-color: #868686;
 }
 
 /* Style tabs themselves.  Get rid of most of the initial XUL styling */
