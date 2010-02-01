@@ -22,6 +22,6 @@
       </hbox>
       <splitter id="statusbar-tabbar-splitter"
                 insertbefore="statusbar-display"
-                state="open" collapse="before" />
+                state="open" />
   </statusbar>
 </overlay>
