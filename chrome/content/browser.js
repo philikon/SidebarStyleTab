@@ -6,6 +6,10 @@ var SidebarStyleTabResizer = {
         this.tabbrowserStrip = document.getElementById('content').mStrip;
         this.tabbrowserStrip.addEventListener("DOMAttrModified", this, false);
 
+        /* We don't expect the splitter to change width */
+        var splitter = document.getElementById('statusbar-tabbar-splitter');
+        this.splitterWidth = splitter.boxObject.width;
+
         this.buttonsStrip.width = this.tabbrowserStrip.width;
     },
 
@@ -14,17 +18,17 @@ var SidebarStyleTabResizer = {
             return;
         }
 
-        var other;
-        if (event.target === this.buttonsStrip) {
-            other = this.tabbrowserStrip;
-        } else {
-            other = this.buttonsStrip;
-        }
-
         /* TreeStyleTab at one point removes tabbrowser.mStrip.width,
            then adds it back later. */
-        if (event.target.width) {
-            other.width = event.target.width;
+        if (!event.target.width) {
+            return;
+        }
+
+        var newwidth = parseInt(event.target.width);
+        if (event.target === this.buttonsStrip) {
+            this.tabbrowserStrip.width = newwidth + this.splitterWidth;
+        } else {
+            this.buttonsStrip.width = newwidth - this.splitterWidth;
         }
     },
 
