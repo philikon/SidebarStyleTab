@@ -1,12 +1,14 @@
 1.5 (XXX)
 ---------
 
+* Greatly improve drag'n'drop visualization.
+
+* Improve look-and-feel of the tab close button.
+
 * Make splitter between tabs and content browser as thin as the one
   between the sidebar and the rest of the window.  The lack of
   usability is compensated by a native-looking splitter in the
   status bar.
-
-* Improve look-and-feel of the tab close button.
 
 * Bring back the "all tabs" button, now placed next to the "new tab"
   button in the status bar.
