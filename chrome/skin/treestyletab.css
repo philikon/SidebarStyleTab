@@ -153,6 +153,21 @@ tabbrowser[treestyletab-mode="vertical"] .treestyletab-counter-container {
   color: #929292 !important;
 }
 
+/* Drag'n'drop styling */
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="self"][selected="true"],
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="self"]:not([selected="true"]) {
+  -moz-border-top-colors: none !important;
+  -moz-border-bottom-colors: none !important;
+  -moz-border-right-colors: none !important;
+  -moz-border-left-colors: none !important;
+}
+
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="self"]:not([selected="true"]) {
+  border: 2px solid #577bf3 !important; /* not OSX's colour but Firefox's */
+  background: #d0def5 !important;
+  -moz-border-radius: 8px !important;
+}
+
 
 /* Don't show the new tab button (+) in vertical mode.  It's been
    moved to the statusbar. */
