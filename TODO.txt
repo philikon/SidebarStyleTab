@@ -13,6 +13,4 @@
 
   - When you want to drop something on a tab, a whole lot of stuff moves
 
-  - OSX style drop indicator
-
 * background for indented tabs should cover the whole width

@@ -153,19 +153,49 @@ tabbrowser[treestyletab-mode="vertical"] .treestyletab-counter-container {
   color: #929292 !important;
 }
 
-/* Drag'n'drop styling */
+/* Drag'n'drop styling:
+   First we need to disable the standard settings from TreeStyleTab.
+   Its initial CSS rules are quite explicit. */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="self"][selected="true"],
-tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="self"]:not([selected="true"]) {
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="self"]:not([selected="true"]),
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="before"][selected="true"],
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="before"]:not([selected="true"]),
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="after"][selected="true"],
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="after"]:not([selected="true"]) {
   -moz-border-top-colors: none !important;
   -moz-border-bottom-colors: none !important;
   -moz-border-right-colors: none !important;
   -moz-border-left-colors: none !important;
 }
 
+/* Round blue rectangle around tabs that are dropping targets. */
 tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="self"]:not([selected="true"]) {
   border: 2px solid #577bf3 !important; /* not OSX's colour but Firefox's */
   background: #d0def5 !important;
   -moz-border-radius: 8px !important;
+}
+
+/* White-blue-white separator for drop indicator. */
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="before"]:not([selected="true"]) {
+  border-top: 4px solid #577bf3 !important;
+  -moz-border-top-colors: #ffffff #577bf3 #577bf3 #ffffff !important;
+}
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="after"]:not([selected="true"]) {
+  border-bottom: 4px solid #577bf3 !important;
+  -moz-border-bottom-colors: #ffffff #577bf3 #577bf3 #ffffff !important;
+}
+
+/* Let's hack in the little round end of the drop indicator using the
+   drop marker image. */
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="before"] .treestyletab-drop-marker,
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="after"] .treestyletab-drop-marker {
+  list-style-image: url("chrome://sidebarstyletab/skin/dropmarker.png");
+}
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="before"] .treestyletab-drop-marker-container {
+  margin: -11px 22px 11px -22px;
+}
+tabbrowser[treestyletab-mode="vertical"] .tabbrowser-tab[treestyletab-drop-position="after"] .treestyletab-drop-marker-container {
+  margin: 12px 22px -12px -22px;
 }
 
 
