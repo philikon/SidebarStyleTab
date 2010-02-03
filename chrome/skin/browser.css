@@ -1,11 +1,17 @@
-#statusbar-tabbar-splitter {
+.statusbar-splitter {
   height: 20px;
   width: 16px;
   border-right: 1px solid #404040;
   background-image: url(chrome://sidebarstyletab/skin/splitter.png);
 }
-#main-window:not([active="true"]) #statusbar-tabbar-splitter {
+#main-window:not([active="true"]) .statusbar-splitter {
   border-right: 1px solid #868686;
+}
+
+
+#statusbar-sidebar-splitter {
+  /* Account for the border of the sidebar */
+  margin-right: 1px;
 }
 
 .statusbar-tabbutton {
@@ -20,6 +26,7 @@
 }
 
 #statusbar-newtabbutton {
+  border-left: none;
   margin-left: -2px;  /* make it tight with the left side of the window */
   list-style-image: url(chrome://browser/skin/tabbrowser/newtab.png);
   -moz-image-region: rect(2px, 17px, 18px, 1px);

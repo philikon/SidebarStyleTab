@@ -1,6 +1,11 @@
-* when sidebar appears, the whole button+slider ensemble in the status
-  bar needs to be moved as well. in fact, we need the exact same
-  event listener for the status bar as well.
+* statusbar splitters:
+
+  - hide and disable the tabbar stuff when the tabbar isn't in
+    vertical mode.
+
+  - when the synchronized object can't change its width anymore
+    (e.g. because it's at its minimum width), the splitter shouldn't
+    be allowed to move.
 
 * check out -moz-appearance: treewisty/treetwistyopen;
 

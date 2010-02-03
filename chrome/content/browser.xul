@@ -7,21 +7,32 @@
   <script src="browser.js" />
 
   <statusbar id="status-bar">
+      <hbox id="statusbar-sidebar-buttons"
+            insertbefore="statusbar-display" />
+      <splitter id="statusbar-sidebar-splitter"
+                class="statusbar-splitter"
+                insertbefore="statusbar-display"
+                state="open"
+                collapse="before" 
+                resizebefore="closest"
+                />
+
       <hbox id="statusbar-tabbar-buttons"
             insertbefore="statusbar-display">
         <toolbarbutton id="statusbar-newtabbutton"
                        class="statusbar-tabbutton"
-                       insertbefore="statusbar-display"
                        command="cmd_newNavigatorTab"
                        tooltiptext="&newTabButton.tooltip;" />
         <toolbarbutton id="statusbar-alltabsbutton"
                        class="statusbar-tabbutton"
-                       insertbefore="statusbar-display"
                        command="Browser:ShowAllTabs"
                        tooltiptext="&listAllTabs.label;" />
       </hbox>
       <splitter id="statusbar-tabbar-splitter"
+                class="statusbar-splitter"
                 insertbefore="statusbar-display"
-                state="open" />
+                state="open"
+                resizebefore="closest"
+                />
   </statusbar>
 </overlay>
