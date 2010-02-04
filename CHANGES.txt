@@ -1,5 +1,5 @@
-1.5 (XXX)
----------
+1.5 (2010-02-04)
+----------------
 
 * Greatly improve drag'n'drop visualization.
 
@@ -7,8 +7,9 @@
 
 * Make splitter between tabs and content browser as thin as the one
   between the sidebar and the rest of the window.  The lack of
-  usability is compensated by a native-looking splitter in the
-  status bar.
+  usability is compensated by a native-looking splitter in the status
+  bar.  The same kind of splitter has been added for the sidebar as
+  well.
 
 * Bring back the "all tabs" button, now placed next to the "new tab"
   button in the status bar.
