@@ -4,8 +4,8 @@
     (e.g. because it's at its minimum width), the splitter shouldn't
     be allowed to move.
 
-* improve drag'n'drop styling
+* sync with TreeStyleTab:
 
-  - When you want to drop something on a tab, a whole lot of stuff moves
+  - When you want to drop a tab on another tab, a whole lot of stuff moves
 
-* background for indented tabs should cover the whole width
+  - Background for indented tabs should cover the whole width
