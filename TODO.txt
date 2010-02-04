@@ -4,8 +4,6 @@
     (e.g. because it's at its minimum width), the splitter shouldn't
     be allowed to move.
 
-* check out -moz-appearance: treewisty/treetwistyopen;
-
 * improve drag'n'drop styling
 
   - When you want to drop something on a tab, a whole lot of stuff moves
