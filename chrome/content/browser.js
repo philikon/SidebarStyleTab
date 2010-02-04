@@ -2,11 +2,13 @@ var SidebarStyleTabbarResizer = {
 
     init: function() {
         window.removeEventListener("DOMContentLoaded", this, false);
+        let tabbrowser = document.getElementById("content");
+        tabbrowser.addEventListener("TreeStyleTabTabbarPositionChanged", this, false);
 
         this.buttonsStrip = document.getElementById("statusbar-tabbar-buttons");
         this.buttonsStrip.addEventListener("DOMAttrModified", this, false);
 
-        this.tabbrowserStrip = document.getElementById('content').mStrip;
+        this.tabbrowserStrip = tabbrowser.mStrip;
         this.tabbrowserStrip.addEventListener("DOMAttrModified", this, false);
 
         this.splitter = document.getElementById('statusbar-tabbar-splitter');
@@ -17,6 +19,14 @@ var SidebarStyleTabbarResizer = {
 
         /* You'd think you wouldn't need the following line, but you do... */
         this.buttonsStrip.width = this.tabbrowserStrip.width - this.splitterWidth;
+    },
+
+    onTabbarPositionChanged: function(event) {
+        if (event.newPosition == "left") {
+            this.buttonsStrip.hidden = this.splitter.hidden = false;
+        } else {
+            this.buttonsStrip.hidden = this.splitter.hidden = true;
+        }
     },
 
     onWidthChange: function(event) {
@@ -51,6 +61,9 @@ var SidebarStyleTabbarResizer = {
             return;
         case 'mouseup':
             this.afterResize(event);
+            return;
+        case 'TreeStyleTabTabbarPositionChanged':
+            this.onTabbarPositionChanged(event);
             return;
         }
     }
