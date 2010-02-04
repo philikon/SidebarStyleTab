@@ -4,7 +4,7 @@
 <overlay id="sidebarstyletab-sidebar-overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <script src="browser.js" />
+  <script src="browser.js" type="application/javascript" />
 
   <statusbar id="status-bar">
       <hbox id="statusbar-sidebar-buttons"
