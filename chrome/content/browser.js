@@ -1,17 +1,27 @@
 var SidebarStyleTabbarResizer = {
 
+    mPrefs: Components.classes['@mozilla.org/preferences-service;1']
+            .getService(Ci.nsIPrefService).getBranch(null),
+
     init: function() {
         window.removeEventListener("DOMContentLoaded", this, false);
-        let tabbrowser = document.getElementById("content");
-        tabbrowser.addEventListener("TreeStyleTabTabbarPositionChanged", this, false);
 
+        this.tabbrowser = document.getElementById("content");
         this.buttonsStrip = document.getElementById("statusbar-tabbar-buttons");
-        this.buttonsStrip.addEventListener("DOMAttrModified", this, false);
-
-        this.tabbrowserStrip = tabbrowser.mStrip;
-        this.tabbrowserStrip.addEventListener("DOMAttrModified", this, false);
-
+        this.tabbrowserStrip = this.tabbrowser.mStrip;
         this.splitter = document.getElementById('statusbar-tabbar-splitter');
+
+        if (!this.mPrefs.getBoolPref("extensions.sidebarstyletab.showStatusBarSplitters")) {
+            this.buttonsStrip.hidden = this.splitter.hidden = true;
+            return;            
+        }
+        this.setUpSplitter();
+    },
+
+    setUpSplitter: function() {
+        this.tabbrowser.addEventListener("TreeStyleTabTabbarPositionChanged", this, false);
+        this.buttonsStrip.addEventListener("DOMAttrModified", this, false);
+        this.tabbrowserStrip.addEventListener("DOMAttrModified", this, false);
         this.splitter.addEventListener('mouseup', this, false);
 
         /* We don't expect the splitter to change width */
@@ -70,16 +80,27 @@ var SidebarStyleTabbarResizer = {
 };
 
 var SidebarStyleSidebarResizer = {
+
+    mPrefs: Components.classes['@mozilla.org/preferences-service;1']
+            .getService(Ci.nsIPrefService).getBranch(null),
+
     init: function() {
         window.removeEventListener("DOMContentLoaded", this, false);
 
         this.statusbarStrip = document.getElementById("statusbar-sidebar-buttons");
-        this.statusbarStrip.addEventListener("DOMAttrModified", this, false);
-
         this.sidebarBox = document.getElementById("sidebar-box");
-        this.sidebarBox.addEventListener("DOMAttrModified", this, false);
-
         this.splitter = document.getElementById('statusbar-sidebar-splitter');
+
+        if (!this.mPrefs.getBoolPref("extensions.sidebarstyletab.showStatusBarSplitters")) {
+            this.statusbarStrip.hidden = this.splitter.hidden = true;
+            return;            
+        }
+        this.setUpSplitter();
+        },
+
+    setUpSplitter: function() {
+        this.statusbarStrip.addEventListener("DOMAttrModified", this, false);
+        this.sidebarBox.addEventListener("DOMAttrModified", this, false);
         this.splitter.addEventListener('mouseup', this, false);
 
         /* We don't expect the splitter to change width */

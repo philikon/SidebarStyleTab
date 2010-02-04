@@ -5,14 +5,17 @@
 
 * Improve look-and-feel of the tab close button.
 
-* Make splitter between tabs and content browser as thin as the one
-  between the sidebar and the rest of the window.  The lack of
-  usability is compensated by a native-looking splitter in the status
-  bar.  The same kind of splitter has been added for the sidebar as
-  well.
-
 * Bring back the "all tabs" button, now placed next to the "new tab"
   button in the status bar.
+
+* Make splitter between tabs and content browser as thin as the one
+  between the sidebar and the rest of the window.
+
+* To compensate the thin splitter, a native-looking was splitter to
+  the status bar.  The same kind of splitter has been added for the
+  sidebar as well.  Both may be disabled by setting the
+  'extensions.sidebarstyletab.showStatusBarSplitters' preference to
+  false.
 
 
 1.4 (2010-01-21)
