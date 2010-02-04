@@ -1,6 +1,8 @@
 var SidebarStyleTabbarResizer = {
 
     init: function() {
+        window.removeEventListener("DOMContentLoaded", this, false);
+
         this.buttonsStrip = document.getElementById("statusbar-tabbar-buttons");
         this.buttonsStrip.addEventListener("DOMAttrModified", this, false);
 
@@ -39,7 +41,7 @@ var SidebarStyleTabbarResizer = {
 
 	handleEvent: function(event) {
 		switch (event.type) {
-        case 'load':
+        case 'DOMContentLoaded':
             this.init();
             return;
         case 'DOMAttrModified':
@@ -56,6 +58,8 @@ var SidebarStyleTabbarResizer = {
 
 var SidebarStyleSidebarResizer = {
     init: function() {
+        window.removeEventListener("DOMContentLoaded", this, false);
+
         this.statusbarStrip = document.getElementById("statusbar-sidebar-buttons");
         this.statusbarStrip.addEventListener("DOMAttrModified", this, false);
 
@@ -93,7 +97,7 @@ var SidebarStyleSidebarResizer = {
 
     handleEvent: function(event) {
 		switch (event.type) {
-        case 'load':
+        case 'DOMContentLoaded':
             this.init();
             return;
         case 'DOMAttrModified':
@@ -107,5 +111,5 @@ var SidebarStyleSidebarResizer = {
     }
 };
 
-window.addEventListener('load', SidebarStyleTabbarResizer, false);
-window.addEventListener('load', SidebarStyleSidebarResizer, false);
+window.addEventListener('DOMContentLoaded', SidebarStyleTabbarResizer, false);
+window.addEventListener('DOMContentLoaded', SidebarStyleSidebarResizer, false);
