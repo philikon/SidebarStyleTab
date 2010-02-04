@@ -13,7 +13,7 @@ var SidebarStyleTabbarResizer = {
 
         if (!this.mPrefs.getBoolPref("extensions.sidebarstyletab.showStatusBarSplitters")) {
             this.buttonsStrip.hidden = this.splitter.hidden = true;
-            return;            
+            return;
         }
         this.setUpSplitter();
     },
@@ -93,7 +93,7 @@ var SidebarStyleSidebarResizer = {
 
         if (!this.mPrefs.getBoolPref("extensions.sidebarstyletab.showStatusBarSplitters")) {
             this.statusbarStrip.hidden = this.splitter.hidden = true;
-            return;            
+            return;
         }
         this.setUpSplitter();
         },
